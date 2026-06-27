@@ -1,0 +1,220 @@
+/* ── Auth shared layout (used by Signup + Login) ────────── */
+
+.auth-page {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 420px 1fr;
+}
+
+/* Left panel */
+.auth-left {
+  background: var(--navy);
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  padding: 40px 48px;
+  justify-content: space-between;
+}
+
+.auth-brand {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--white);
+  cursor: pointer;
+  letter-spacing: -0.5px;
+}
+
+.auth-left-body {
+  padding-bottom: 80px;
+}
+
+.auth-left-quote {
+  font-family: var(--font-display);
+  font-size: 1.55rem;
+  line-height: 1.45;
+  font-weight: 600;
+  color: var(--white);
+  margin-bottom: 20px;
+  border-left: 3px solid var(--amber);
+  padding-left: 20px;
+}
+
+.auth-left-sub {
+  font-size: 0.9rem;
+  color: var(--slate-light);
+  padding-left: 23px;
+}
+
+/* Right panel */
+.auth-right {
+  background: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 40px;
+  overflow-y: auto;
+}
+
+.auth-form-wrap {
+  width: 100%;
+  max-width: 440px;
+}
+
+.auth-title {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  margin-bottom: 8px;
+  color: var(--navy);
+}
+
+.auth-sub {
+  font-size: 0.92rem;
+  color: var(--slate);
+  margin-bottom: 36px;
+}
+
+/* Form fields */
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.field-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.field-label {
+  font-size: 0.83rem;
+  font-weight: 600;
+  color: var(--navy);
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+}
+
+.input-field {
+  width: 100%;
+  padding: 13px 16px;
+  border: 1.5px solid var(--slate-light);
+  border-radius: var(--radius-sm);
+  font-size: 0.95rem;
+  color: var(--navy);
+  background: var(--white);
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+.input-field::placeholder { color: var(--slate); }
+.input-field:focus {
+  border-color: var(--navy);
+  box-shadow: 0 0 0 3px rgba(15, 27, 45, 0.08);
+}
+.input-field.input-error { border-color: var(--danger); }
+.input-field.input-ok    { border-color: var(--green); }
+
+.field-error {
+  font-size: 0.8rem;
+  color: var(--danger);
+  margin-top: 2px;
+}
+
+/* Phone row */
+.phone-wrap {
+  display: flex;
+  align-items: stretch;
+}
+
+.phone-code {
+  display: flex;
+  align-items: center;
+  padding: 0 14px;
+  background: var(--ice);
+  border: 1.5px solid var(--slate-light);
+  border-right: none;
+  border-radius: var(--radius-sm) 0 0 var(--radius-sm);
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--slate);
+  white-space: nowrap;
+}
+
+.phone-input {
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0 !important;
+  flex: 1;
+}
+
+/* Password strength */
+.pw-strength {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 4px;
+}
+
+.pw-bars {
+  display: flex;
+  gap: 4px;
+  flex: 1;
+}
+
+.pw-bar {
+  height: 4px;
+  flex: 1;
+  border-radius: 2px;
+  transition: background 0.3s;
+}
+
+.pw-label {
+  font-size: 0.78rem;
+  font-weight: 700;
+  min-width: 40px;
+  text-align: right;
+}
+
+/* Submit */
+.auth-submit {
+  margin-top: 8px;
+  width: 100%;
+  padding: 14px;
+  background: var(--navy);
+  color: var(--white);
+  font-size: 0.97rem;
+  font-weight: 600;
+  border-radius: var(--radius-sm);
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.15s;
+}
+.auth-submit:hover:not(:disabled) {
+  background: var(--navy-light);
+  transform: translateY(-1px);
+}
+.auth-submit:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Bottom link */
+.auth-switch {
+  margin-top: 24px;
+  text-align: center;
+  font-size: 0.88rem;
+  color: var(--slate);
+}
+
+.auth-link {
+  color: var(--navy);
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: underline;
+}
+.auth-link:hover { color: var(--amber); }
+
+/* Responsive */
+@media (max-width: 768px) {
+  .auth-page { grid-template-columns: 1fr; }
+  .auth-left  { display: none; }
+}

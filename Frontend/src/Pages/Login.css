@@ -1,82 +1,18 @@
-html,
-body {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  min-height: 100vh;
-}
+/* Login-specific additions on top of shared Signup.css */
 
-body {
-  background: linear-gradient(135deg, #cec92e, #2e2c12);
-  color: white;
-  font-family: Arial, sans-serif;
-}
-
-.loginPage {
-  min-height: 100vh;
+.login-label-row {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 
-.loginCard {
-  width: 400px;
-  background: rgb(227, 234, 128);
-  padding: 40px;
-  border-radius: 16px;
-  border: 1px solid #dedede;
-  box-sizing: border-box;
-}
-
-.loginCard h1 {
-  color: #1f3c34;
-  margin-bottom: 25px;
-  text-align: center;
-}
-
-input {
-  width: 100%;
-  padding: 14px;
-  margin-bottom: 15px;
-  border: 1px solid #dedede;
-  border-radius: 10px;
-  box-sizing: border-box;
-  font-size: 15px;
-}
-
-button {
-  width: 100%;
-  padding: 14px;
-  background: #1f3c34;
-  color: white;
-  border: none;
-  border-radius: 10px;
+.login-forgot {
+  font-size: 0.8rem;
+  color: var(--slate);
   cursor: pointer;
-  font-size: 16px;
+  font-weight: 500;
+  transition: color 0.2s;
 }
-
-button:hover {
-  opacity: 0.9;
-}
-
-.error {
-  color: red;
-  margin-top: 15px;
-  text-align: center;
-}
-
-.switchText {
-  color: #555;
-  text-align: center;
-  margin-top: 20px;
-}
-
-.switchText span {
-  color: #1f3c34;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-.switchText span:hover {
-  text-decoration: underline;
+.login-forgot:hover {
+  color: var(--navy);
 }
