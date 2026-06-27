@@ -1,0 +1,166 @@
+/* ── Subscription Card ──────────────────────────────────── */
+
+.sub-card {
+  background: var(--white);
+  border: 1.5px solid var(--ice);
+  border-radius: var(--radius-md);
+  padding: 22px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  transition: box-shadow 0.2s, border-color 0.2s;
+  box-shadow: var(--shadow-card);
+}
+.sub-card:hover {
+  box-shadow: var(--shadow-lift);
+}
+
+.sub-card.sub-forgotten {
+  border-color: #f5a62355;
+  background: #fffcf5;
+}
+
+.sub-card.sub-increased {
+  border-color: #e0525233;
+  background: #fffafa;
+}
+
+/* Tags */
+.sub-tags {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.sub-tag {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 3px 8px;
+  border-radius: 4px;
+}
+
+.tag-active   { background: var(--green-light);   color: var(--green); }
+.tag-forgotten { background: var(--amber-light);  color: #b97300; }
+.tag-increased { background: var(--danger-light); color: var(--danger); }
+
+.sub-cycle {
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--slate);
+  text-transform: capitalize;
+  margin-left: auto;
+}
+
+/* Identity */
+.sub-identity {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.sub-logo {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 0.85rem;
+  flex-shrink: 0;
+}
+
+.sub-name {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--navy);
+}
+
+.sub-raw {
+  font-size: 0.72rem;
+  color: var(--slate);
+  margin-top: 2px;
+  font-family: monospace;
+}
+
+/* Amount */
+.sub-amount-row {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.sub-amount {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--navy);
+}
+
+.sub-prev-amount {
+  font-size: 0.82rem;
+  color: var(--danger);
+  text-decoration: line-through;
+}
+
+/* Billing */
+.sub-billing {
+  font-size: 0.82rem;
+  color: var(--slate);
+}
+.sub-billing strong {
+  color: var(--navy);
+}
+
+/* Category */
+.sub-category {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--slate);
+  background: var(--ice);
+  padding: 3px 10px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  width: fit-content;
+}
+
+/* Actions */
+.sub-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 4px;
+  border-top: 1px solid var(--ice);
+  padding-top: 12px;
+}
+
+.sub-btn-cancel {
+  flex: 1;
+  background: var(--danger-light);
+  color: var(--danger);
+  font-size: 0.82rem;
+  font-weight: 600;
+  padding: 9px 0;
+  border-radius: var(--radius-sm);
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.sub-btn-cancel:hover { background: #fbd0d0; }
+
+.sub-btn-keep {
+  flex: 1;
+  background: var(--ice);
+  color: var(--slate);
+  font-size: 0.82rem;
+  font-weight: 600;
+  padding: 9px 0;
+  border-radius: var(--radius-sm);
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.sub-btn-keep:hover { background: #dde4ef; }

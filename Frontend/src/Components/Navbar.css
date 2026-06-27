@@ -1,0 +1,86 @@
+
+.navbar {
+  width: 220px;
+  min-height: 100vh;
+  background: var(--navy);
+  display: flex;
+  flex-direction: column;
+  padding: 36px 24px;
+  position: sticky;
+  top: 0;
+  flex-shrink: 0;
+}
+
+.navbar-brand {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--white);
+  cursor: pointer;
+  letter-spacing: -0.5px;
+  margin-bottom: 48px;
+}
+
+.navbar-links {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  flex: 1;
+}
+
+.navbar-link {
+  display: block;
+  padding: 10px 14px;
+  border-radius: var(--radius-sm);
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--slate-light);
+  text-decoration: none;
+  transition: background 0.15s, color 0.15s;
+}
+.navbar-link:hover {
+  background: rgba(255,255,255,0.07);
+  color: var(--white);
+}
+.navbar-link.active {
+  background: rgba(255,255,255,0.12);
+  color: var(--white);
+  font-weight: 600;
+}
+
+/* Footer */
+.navbar-footer {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(255,255,255,0.08);
+}
+
+.navbar-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--amber);
+  color: var(--navy);
+  font-weight: 700;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.navbar-username {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--white);
+}
+
+.navbar-logout {
+  font-size: 0.75rem;
+  color: var(--slate);
+  cursor: pointer;
+  transition: color 0.2s;
+}
+.navbar-logout:hover { color: var(--danger); }

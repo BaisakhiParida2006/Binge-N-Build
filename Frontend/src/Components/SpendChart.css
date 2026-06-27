@@ -1,0 +1,77 @@
+/* ── Spend Chart ─────────────────────────────────────────── */
+
+.spend-chart-card {
+  background: var(--white);
+  border-radius: var(--radius-md);
+  padding: 28px 28px 20px;
+  box-shadow: var(--shadow-card);
+  border: 1px solid var(--ice);
+}
+
+.chart-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 24px;
+}
+
+.chart-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 3px;
+}
+
+.chart-sub {
+  font-size: 0.78rem;
+  color: var(--slate);
+}
+
+.chart-peak {
+  text-align: right;
+}
+
+.peak-label {
+  display: block;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--slate);
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  margin-bottom: 2px;
+}
+
+.peak-value {
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--navy);
+}
+
+.chart-area {
+  margin: 0 -8px;
+}
+
+/* Recharts tooltip */
+.chart-tooltip {
+  background: var(--navy);
+  border-radius: 8px;
+  padding: 10px 14px;
+  box-shadow: var(--shadow-lift);
+}
+
+.tooltip-month {
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--slate-light);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 2px;
+}
+
+.tooltip-amount {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--white);
+}
