@@ -33,7 +33,7 @@
 }
 
 .sub-tag {
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.5px;
@@ -41,9 +41,9 @@
   border-radius: 4px;
 }
 
-.tag-active   { background: var(--green-light);   color: var(--green); }
-.tag-forgotten { background: var(--amber-light);  color: #b97300; }
-.tag-increased { background: var(--danger-light); color: var(--danger); }
+.tag-active   {  color: var(--green); }
+.tag-forgotten { color: #b97300; }
+.tag-increased { color: var(--danger); }
 
 .sub-cycle {
   font-size: 0.72rem;
@@ -63,7 +63,7 @@
 .sub-logo {
   width: 44px;
   height: 44px;
-  border-radius: 10px;
+  border-radius: 25px;
   display: flex;
   align-items: center;
   justify-content: center;

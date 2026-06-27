@@ -25,7 +25,7 @@ export default function SubscriptionCard({ sub, onCancel }) {
       <div className="sub-identity">
         <div
           className="sub-logo"
-          style={{ background: sub.logoColor + '22', color: sub.logoColor }}
+          style={{ background: sub.logoColor , color: 'white' }}
         >
           {sub.logoText}
         </div>
@@ -45,7 +45,7 @@ export default function SubscriptionCard({ sub, onCancel }) {
 
       {/* Next billing */}
       <div className="sub-billing">
-        Next charge in <strong>{days} days</strong> — {sub.nextBilling}
+        Next charge on {sub.nextBilling}
       </div>
 
       {/* Category */}

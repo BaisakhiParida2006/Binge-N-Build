@@ -61,7 +61,7 @@ export default function Dashboard() {
               cancellation. Set a reminder to actually cancel them.
             </AlertBanner>
           )}
-        </div>
+        </div> 
 
         <section className="dash-summary">
           <div className="summary-card summary-main">
@@ -133,7 +133,7 @@ export default function Dashboard() {
                   <span className="decoder-raw">{tx.raw}</span>
                   <span className="decoder-name">
                     {decoded ? (
-                      <span className="decoded-pill" style={{ color: decoded.color, background: decoded.color + '18' }}>
+                      <span className="decoded-pill" style={{ color: decoded.color }}>
                         {decoded.name}
                       </span>
                     ) : (
@@ -148,7 +148,7 @@ export default function Dashboard() {
           </div>
         </section>
 
-        <section className="dash-section" id="warnings">
+         <section className="dash-section" id="warnings">
           <div className="section-header">
             <div>
               <h2 className="section-title">All subscriptions</h2>
@@ -185,13 +185,13 @@ export default function Dashboard() {
               />
             ))}
           </div>
-        </section>
+        </section> 
 
         <section className="dash-section">
           <h2 className="section-title">Coming up this month</h2>
           <p className="section-sub" style={{ marginBottom: 20 }}>
             Charges hitting your account in the next 30 days
-          </p>
+          </p> 
           <div className="upcoming-list">
             {subscriptions
               .filter(s => {

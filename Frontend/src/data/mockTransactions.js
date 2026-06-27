@@ -37,8 +37,8 @@ export const merchantMap = {
   'NFLX*12345 INTL':      { name: 'Netflix',          logo: 'N', color: '#E50914' },
   'SPOTIFYAB*7XK2':       { name: 'Spotify',          logo: 'S', color: '#1DB954' },
   'AMZN*PRIME9981 AMZN':  { name: 'Amazon Prime',     logo: 'A', color: '#FF9900' },
-  'ADOBE*CRCLOUD CC':     { name: 'Adobe Creative',   logo: 'Ai', color: '#FF0000' },
-  'APPLECOM*BILL 1APPLID':{ name: 'Apple Services',   logo: '', color: '#555555' },
+  'ADOBE*CRCLOUD CC':     { name: 'Adobe Creative',   logo: 'A', color: '#FF0000' },
+  'APPLECOM*BILL 1APPLID':{ name: 'Apple Services',   logo: 'A', color: '#555555' },
   'LNKDIN*PREMIUM8821':   { name: 'LinkedIn Premium', logo: 'in', color: '#0A66C2' },
   'ZOMATO*PGOLD DELHI':   { name: 'Zomato Pro',       logo: 'Z', color: '#E23744' },
   'HOTSTAR*SUB*012XP':    { name: 'Disney+ Hotstar',  logo: 'H', color: '#0C2D7C' },
@@ -107,7 +107,7 @@ export const subscriptions = [
     forgotten: false,
     priceIncreased: true,
     logoColor: '#FF0000',
-    logoText: 'Ai',
+    logoText: 'A',
   },
   {
     id: 5,
@@ -122,7 +122,7 @@ export const subscriptions = [
     status: 'active',
     forgotten: false,
     logoColor: '#555555',
-    logoText: '',
+    logoText: 'A',
   },
   {
     id: 6,
