@@ -24,7 +24,6 @@ function validate(fields) {
     errors.email = 'Enter a valid email address.'
   }
 
-  // Indian phone: 10 digits, starts with 6-9
   const phoneRe = /^[6-9]\d{9}$/
   if (!fields.phone) {
     errors.phone = 'Phone number is required.'
@@ -135,7 +134,7 @@ export default function Signup() {
                 id="email"
                 name="email"
                 type="email"
-                placeholder="abc@email.com"
+                placeholder="abc@gmail.com"
                 className={fieldClass('email')}
                 value={fields.email}
                 onChange={handleChange}

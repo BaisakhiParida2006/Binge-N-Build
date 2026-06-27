@@ -7,13 +7,13 @@ const NAV_LINKS = [
   { label: 'Warnings',       path: '/dashboard#warnings' },
 ]
 
-export default function Navbar({ userName = 'Arjun' }) {
+export default function Navbar({ userName = 'abc' }) {
   const navigate  = useNavigate()
   const location  = useLocation()
 
   return (
     <aside className="navbar">
-      <div className="navbar-brand" onClick={() => navigate('/')}>SubTrack</div>
+      <div className="navbar-brand" onClick={() => navigate('/')}>ExpenseOnTheGo</div>
 
       <nav className="navbar-links">
         {NAV_LINKS.map(link => (

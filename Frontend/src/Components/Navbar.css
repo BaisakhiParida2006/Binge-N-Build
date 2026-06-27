@@ -1,6 +1,5 @@
-
 .navbar {
-  width: 220px;
+  width: 250px;
   min-height: 100vh;
   background: var(--navy);
   display: flex;
@@ -48,7 +47,6 @@
   font-weight: 600;
 }
 
-/* Footer */
 .navbar-footer {
   display: flex;
   align-items: center;
